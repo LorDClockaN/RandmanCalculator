@@ -7,6 +7,7 @@
     <string name="empty_fields_snackbar">Enter numbers!!!</string>
     <string name="zero_fields_snackbar">Input can\'t be zero!!!</string>
     <string name="clear_snackbar">Cleared</string>
+    <string name="already_cleared_snackbar">Fields are already empty.</string>
     <string name="litres_hint">litres</string>
     <string name="kilograms_hint">kilograms</string>
     <string name="copyright_title">Copyright</string>

@@ -80,11 +80,18 @@ public class MainActivity extends AppCompatActivity {
                 final View coordinatorLayoutView = findViewById(R.id.snackbar);
                 v.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),
                         R.anim.image_click));
-                mOlivesInKg.setText("");
-                mOlivesInLt.setText("");
-                mRandmanResult.setText("");
-                Snackbar.make(coordinatorLayoutView, R.string.clear_snackbar, Snackbar.LENGTH_SHORT)
-                        .setAction("Action", null).show();
+                if (mOlivesInKg.getText().toString().isEmpty() &&
+                        mOlivesInLt.getText().toString().isEmpty() &&
+                        mRandmanResult.getText().toString().isEmpty()) {
+                    Snackbar.make(coordinatorLayoutView, R.string.already_cleared_snackbar,
+                            Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+                } else {
+                    mOlivesInKg.setText("");
+                    mOlivesInLt.setText("");
+                    mRandmanResult.setText("");
+                    Snackbar.make(coordinatorLayoutView, R.string.clear_snackbar,
+                            Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+                }
             }
         });
 

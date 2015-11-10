@@ -5,6 +5,7 @@
     <string name="empty_fields_snackbar">Morate upisati brojeve!!!</string>
     <string name="zero_fields_snackbar">Unos ne može biti nula!!!</string>
     <string name="clear_snackbar">Izbrisano</string>
+    <string name="already_cleared_snackbar">Polja su već prazna.</string>
     <string name="litres_hint">litre</string>
     <string name="kilograms_hint">kile</string>
     <string name="copyright_title">Copyright</string>
